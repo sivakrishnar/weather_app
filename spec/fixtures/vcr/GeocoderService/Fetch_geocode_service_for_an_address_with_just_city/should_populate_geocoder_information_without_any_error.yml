@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Cupertino
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 21 Jan 2024 02:47:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2213'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMTM3NDgyOSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyMjIxNzA5LCJsYXQiOiIzNy4zMjI4OTM0IiwibG9uIjoiLTEyMi4wMzIyODk1IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5MzEyMjA1NzY0MzUxODEsImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJDdXBlcnRpbm8iLCJkaXNwbGF5X25hbWUiOiJDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgQ2FsaWZvcm5pYSwgOTUwMTQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwicG9zdGNvZGUiOiI5NTAxNCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzcuMjc4NTM3OSIsIjM3LjM0MDM0OTgiLCItMTIyLjA5MTA4NTEiLCItMTIxLjk5NTgyNDkiXX0seyJwbGFjZV9pZCI6Mjk3Nzk0MDAzLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6NTQyMjkwNDQ5NiwibGF0IjoiMTAuMjI1NDM3NiIsImxvbiI6Ii02Ni4yMTU1Njg1IiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwicGxhY2VfcmFuayI6MTksImltcG9ydGFuY2UiOjAuMjc1MDEsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJDdXBlcnRpbm8iLCJkaXNwbGF5X25hbWUiOiJDdXBlcnRpbm8sIFBhcnJvcXVpYSBBcsOpdmFsbyBHb256w6FsZXosIE11bmljaXBpbyBBY2V2ZWRvLCBNaXJhbmRhIFN0YXRlLCAxMjQxLCBWZW5lenVlbGEiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJDdXBlcnRpbm8iLCJtdW5pY2lwYWxpdHkiOiJQYXJyb3F1aWEgQXLDqXZhbG8gR29uesOhbGV6IiwiY291bnR5IjoiTXVuaWNpcGlvIEFjZXZlZG8iLCJzdGF0ZSI6Ik1pcmFuZGEgU3RhdGUiLCJJU08zMTY2LTItbHZsNCI6IlZFLU0iLCJwb3N0Y29kZSI6IjEyNDEiLCJjb3VudHJ5IjoiVmVuZXp1ZWxhIiwiY291bnRyeV9jb2RlIjoidmUifSwiYm91bmRpbmdib3giOlsiMTAuMjA1NDM3NiIsIjEwLjI0NTQzNzYiLCItNjYuMjM1NTY4NSIsIi02Ni4xOTU1Njg1Il19LHsicGxhY2VfaWQiOjQ0MjkwMzE0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6NDk2MTgyNzI5NSwibGF0IjoiLTYuMDQ1MjcyNiIsImxvbiI6Ii00My45MTA2NTY3IiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJoYW1sZXQiLCJwbGFjZV9yYW5rIjoyMCwiaW1wb3J0YW5jZSI6MC4yNTAwMDk5OTk5OTk5OTk5NSwiYWRkcmVzc3R5cGUiOiJoYW1sZXQiLCJuYW1lIjoiQ3VwZXJ0aW5vIiwiZGlzcGxheV9uYW1lIjoiQ3VwZXJ0aW5vLCBQYXNzYWdlbSBGcmFuY2EsIFJlZ2nDo28gR2VvZ3LDoWZpY2EgSW1lZGlhdGEgZGUgU8OjbyBKb8OjbyBkb3MgUGF0b3MsIFJlZ2nDo28gR2VvZ3LDoWZpY2EgSW50ZXJtZWRpw6FyaWEgZGUgUHJlc2lkZW50ZSBEdXRyYSwgTWFyYW5ow6NvLCBOb3J0aGVhc3QgUmVnaW9uLCBCcmF6aWwiLCJhZGRyZXNzIjp7ImhhbWxldCI6IkN1cGVydGlubyIsInRvd24iOiJQYXNzYWdlbSBGcmFuY2EiLCJtdW5pY2lwYWxpdHkiOiJSZWdpw6NvIEdlb2dyw6FmaWNhIEltZWRpYXRhIGRlIFPDo28gSm/Do28gZG9zIFBhdG9zIiwic3RhdGVfZGlzdHJpY3QiOiJSZWdpw6NvIEdlb2dyw6FmaWNhIEludGVybWVkacOhcmlhIGRlIFByZXNpZGVudGUgRHV0cmEiLCJzdGF0ZSI6Ik1hcmFuaMOjbyIsIklTTzMxNjYtMi1sdmw0IjoiQlItTUEiLCJyZWdpb24iOiJOb3J0aGVhc3QgUmVnaW9uIiwiY291bnRyeSI6IkJyYXppbCIsImNvdW50cnlfY29kZSI6ImJyIn0sImJvdW5kaW5nYm94IjpbIi02LjA2NTI3MjYiLCItNi4wMjUyNzI2IiwiLTQzLjkzMDY1NjciLCItNDMuODkwNjU2NyJdfV0=
+  recorded_at: Sun, 21 Jan 2024 02:47:04 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/points/-104.93042,39.749434
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/problem+json
+      X-Request-Id:
+      - fb40d010-dbb7-46f0-8911-17c1757f0238
+      X-Correlation-Id:
+      - 28115d31
+      X-Server-Id:
+      - vm-bldr-nids-apiapp6.ncep.noaa.gov
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '327'
+      Cache-Control:
+      - private, must-revalidate, max-age=86354
+      Expires:
+      - Mon, 22 Jan 2024 02:46:17 GMT
+      Date:
+      - Sun, 21 Jan 2024 02:47:03 GMT
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 8fece673
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "28115d31",
+            "title": "Invalid Parameter",
+            "type": "https://api.weather.gov/problems/InvalidParameter",
+            "status": 400,
+            "detail": "Parameter \"point\" is invalid: '-104.93042,39.749434' does not appear to be a valid coordinate",
+            "instance": "https://api.weather.gov/requests/28115d31"
+        }
+  recorded_at: Sun, 21 Jan 2024 02:47:03 GMT
+- request:
+    method: get
+    uri: https://api.weather.gov/points/-104.93042,39.749434
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/problem+json
+      X-Request-Id:
+      - 000abd9a-ca0a-4c3c-af8c-26fbc5aaef44
+      X-Correlation-Id:
+      - 26f87065
+      X-Server-Id:
+      - vm-bldr-nids-apiapp6.ncep.noaa.gov
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '327'
+      Cache-Control:
+      - private, must-revalidate, max-age=86400
+      Expires:
+      - Mon, 22 Jan 2024 02:47:03 GMT
+      Date:
+      - Sun, 21 Jan 2024 02:47:03 GMT
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 8fecea8a
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "26f87065",
+            "title": "Invalid Parameter",
+            "type": "https://api.weather.gov/problems/InvalidParameter",
+            "status": 400,
+            "detail": "Parameter \"point\" is invalid: '-104.93042,39.749434' does not appear to be a valid coordinate",
+            "instance": "https://api.weather.gov/requests/26f87065"
+        }
+  recorded_at: Sun, 21 Jan 2024 02:47:03 GMT
+recorded_with: VCR 6.0.0

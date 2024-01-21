@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/points/,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/problem+json
+      X-Request-Id:
+      - 62fa756d-7f7d-4b54-a73b-783344a4dcd4
+      X-Correlation-Id:
+      - 26f86a33
+      X-Server-Id:
+      - vm-bldr-nids-apiapp5.ncep.noaa.gov
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '418'
+      Cache-Control:
+      - private, must-revalidate, max-age=86400
+      Expires:
+      - Mon, 22 Jan 2024 02:47:03 GMT
+      Date:
+      - Sun, 21 Jan 2024 02:47:03 GMT
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 8fece2c6
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "26f86a33",
+            "parameterErrors": [
+                {
+                    "parameter": "path.point",
+                    "message": "Does not match the regex pattern ^(-?\\d+(?:\\.\\d+)?),(-?\\d+(?:\\.\\d+)?)$"
+                }
+            ],
+            "title": "Not Found",
+            "type": "https://api.weather.gov/problems/NotFound",
+            "status": 404,
+            "detail": "Not Found",
+            "instance": "https://api.weather.gov/requests/26f86a33"
+        }
+  recorded_at: Sun, 21 Jan 2024 02:47:03 GMT
+- request:
+    method: get
+    uri: https://api.weather.gov/points/,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/problem+json
+      X-Request-Id:
+      - 62fa756d-7f7d-4b54-a73b-783344a4dcd4
+      X-Correlation-Id:
+      - 26f86a33
+      X-Server-Id:
+      - vm-bldr-nids-apiapp5.ncep.noaa.gov
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '418'
+      Cache-Control:
+      - private, must-revalidate, max-age=86400
+      Expires:
+      - Mon, 22 Jan 2024 02:47:03 GMT
+      Date:
+      - Sun, 21 Jan 2024 02:47:03 GMT
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 8fece4aa
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "26f86a33",
+            "parameterErrors": [
+                {
+                    "parameter": "path.point",
+                    "message": "Does not match the regex pattern ^(-?\\d+(?:\\.\\d+)?),(-?\\d+(?:\\.\\d+)?)$"
+                }
+            ],
+            "title": "Not Found",
+            "type": "https://api.weather.gov/problems/NotFound",
+            "status": 404,
+            "detail": "Not Found",
+            "instance": "https://api.weather.gov/requests/26f86a33"
+        }
+  recorded_at: Sun, 21 Jan 2024 02:47:03 GMT
+recorded_with: VCR 6.0.0

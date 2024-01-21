@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1900%20Prairie%20City%20Rd,%20Folsom,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 21 Jan 2024 02:47:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '731'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM1MDc4Njk3OCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6NTA4MzMzMjE5LCJsYXQiOiIzOC42NDkzNjEiLCJsb24iOiItMTIxLjE2Mjg0NiIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJwbGFjZV9yYW5rIjozMCwiaW1wb3J0YW5jZSI6OS45OTk5OTk5OTQ3MzY0NDJlLTA4LCJhZGRyZXNzdHlwZSI6InBsYWNlIiwibmFtZSI6IiIsImRpc3BsYXlfbmFtZSI6IjE5MDAsIFByYWlyaWUgQ2l0eSBSb2FkLCBQcmFpcmllIE9ha3MsIEZvbHNvbSwgU2FjcmFtZW50byBDb3VudHksIENhbGlmb3JuaWEsIDk1NjMwLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxOTAwIiwicm9hZCI6IlByYWlyaWUgQ2l0eSBSb2FkIiwibmVpZ2hib3VyaG9vZCI6IlByYWlyaWUgT2FrcyIsImNpdHkiOiJGb2xzb20iLCJjb3VudHkiOiJTYWNyYW1lbnRvIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk1NjMwIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOC42NDkzMTEwIiwiMzguNjQ5NDExMCIsIi0xMjEuMTYyODk2MCIsIi0xMjEuMTYyNzk2MCJdfV0=
+  recorded_at: Sun, 21 Jan 2024 02:47:05 GMT
+recorded_with: VCR 6.0.0

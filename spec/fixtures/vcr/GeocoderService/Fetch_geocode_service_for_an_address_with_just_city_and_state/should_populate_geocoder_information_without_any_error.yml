@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Cupertino,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 21 Jan 2024 02:47:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMTM3NDgyOSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyMjIxNzA5LCJsYXQiOiIzNy4zMjI4OTM0IiwibG9uIjoiLTEyMi4wMzIyODk1IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5MzEyMjA1NzY0MzUxODEsImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJDdXBlcnRpbm8iLCJkaXNwbGF5X25hbWUiOiJDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgQ2FsaWZvcm5pYSwgOTUwMTQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwicG9zdGNvZGUiOiI5NTAxNCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzcuMjc4NTM3OSIsIjM3LjM0MDM0OTgiLCItMTIyLjA5MTA4NTEiLCItMTIxLjk5NTgyNDkiXX1d
+  recorded_at: Sun, 21 Jan 2024 02:47:03 GMT
+recorded_with: VCR 6.0.0

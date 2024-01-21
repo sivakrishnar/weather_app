@@ -1,0 +1,12 @@
+<div class="row">
+    <h2>Weather Forecast</h2>
+    <% weather_forecast.each_slice(2) do |forecast_high, forecast_low| %>
+      <div class="col-sm-2">
+         <img src="<%=forecast_high['icon']%>" alt="" class="pull-left">
+         <p><strong><%= forecast_high['name'].upcase %></strong></p>
+         <p><%= forecast_high['shortForecast'] %></p> 
+         <h3>H: <%= forecast_high["temperature"] %><%=forecast_high['temperatureUnit'] %>/L: <%= forecast_low["temperature"] %><%=forecast_low['temperatureUnit'] %></h3>
+         <p><%= forecast_high['detailedForecast'] %></p>
+      </div>
+    <% end %>  
+</div>

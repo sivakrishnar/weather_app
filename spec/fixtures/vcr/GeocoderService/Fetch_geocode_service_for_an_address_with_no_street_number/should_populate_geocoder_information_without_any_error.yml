@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Gold%20Rush%20Dr,%20Folsom,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 21 Jan 2024 02:47:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1407'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMDQ1ODYxNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6OTc0NTU5MDQyLCJsYXQiOiIzOC42Mjc0ODkiLCJsb24iOiItMTIxLjI2MTIxOSIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJ0ZXJ0aWFyeSIsInBsYWNlX3JhbmsiOjI2LCJpbXBvcnRhbmNlIjowLjEwMDAwOTk5OTk5OTk5OTkzLCJhZGRyZXNzdHlwZSI6InJvYWQiLCJuYW1lIjoiR29sZCBSdXNoIERyaXZlIiwiZGlzcGxheV9uYW1lIjoiR29sZCBSdXNoIERyaXZlLCBHb2xkIFJpdmVyLCBGb2xzb20sIFNhY3JhbWVudG8gQ291bnR5LCBDYWxpZm9ybmlhLCA5NTYyOCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsicm9hZCI6IkdvbGQgUnVzaCBEcml2ZSIsInN1YnVyYiI6IkdvbGQgUml2ZXIiLCJjaXR5IjoiRm9sc29tIiwiY291bnR5IjoiU2FjcmFtZW50byBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwicG9zdGNvZGUiOiI5NTYyOCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzguNjI1OTQxOCIsIjM4LjYyOTEyODgiLCItMTIxLjI2MjQ4MTIiLCItMTIxLjI2MDI1NTQiXX0seyJwbGFjZV9pZCI6MzEwNDU1ODk5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoxMDUxNTA3MCwibGF0IjoiMzguNjIzNzUxIiwibG9uIjoiLTEyMS4yNTg3OCIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJ0ZXJ0aWFyeSIsInBsYWNlX3JhbmsiOjI2LCJpbXBvcnRhbmNlIjowLjEwMDAwOTk5OTk5OTk5OTkzLCJhZGRyZXNzdHlwZSI6InJvYWQiLCJuYW1lIjoiR29sZCBSdXNoIERyaXZlIiwiZGlzcGxheV9uYW1lIjoiR29sZCBSdXNoIERyaXZlLCBHb2xkIFJpdmVyLCBGb2xzb20sIFNhY3JhbWVudG8gQ291bnR5LCBDYWxpZm9ybmlhLCA5NTY3MCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsicm9hZCI6IkdvbGQgUnVzaCBEcml2ZSIsInN1YnVyYiI6IkdvbGQgUml2ZXIiLCJjaXR5IjoiRm9sc29tIiwiY291bnR5IjoiU2FjcmFtZW50byBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwicG9zdGNvZGUiOiI5NTY3MCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzguNjIyMjU4MCIsIjM4LjYyNTIxODAiLCItMTIxLjI1OTYxMjgiLCItMTIxLjI1ODIwNzQiXX1d
+  recorded_at: Sun, 21 Jan 2024 02:47:05 GMT
+recorded_with: VCR 6.0.0
